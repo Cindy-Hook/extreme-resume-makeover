@@ -1,0 +1,10 @@
+{
+  "name": "extreme-resume-makeover",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EXTREME Resume Makeover website, migrated from Gamma, with AI-powered Resume and LinkedIn scorer tools.",
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "pdf-parse": "^1.1.1"
+  }
+}
