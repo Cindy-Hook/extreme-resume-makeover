@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Page Scorer | EXTREME Resume Makeover</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Extreme Resume Makeover logo">EXTREME Resume Makeover</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776; Menu</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="resume-strategy-session.html">Resume Strategy Session</a>
+      <a href="extreme-resume-makeover.html">Extreme Resume Makeover</a>
+      <a href="resume-linkedin-alignment.html">Resume + LinkedIn Alignment</a>
+      <a href="linkedin-positioning-package.html">LinkedIn Positioning Package</a>
+      <a href="extreme-video-authority.html">Extreme Video Authority</a>
+      <a href="linkedin-packages.html">LinkedIn-Only Packages</a>
+      <a href="resume-services.html">Resume Services</a>
+      <a href="packages.html">Resume &amp; LinkedIn Packages</a>
+      <a href="get-found-on-linkedin.html">Get Found on LinkedIn</a>
+      <a href="resume-scorer.html">Resume Scorer</a>
+      <a href="linkedin-scorer.html" class="active">LinkedIn Scorer</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="section">
+  <div class="container text-center">
+    <span class="tag">FREE AI TOOL</span>
+    <h1 class="section-title">LinkedIn Page Scorer</h1>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;">Upload a PDF export of your LinkedIn profile and get an instant, AI-powered score on positioning, keyword strength, and recruiter visibility, then see which package is the fastest path to fixing it.</p>
+
+    <form class="form-card" id="scorerForm" novalidate>
+      <div class="form-group">
+        <label for="fileInput">Upload your LinkedIn profile (PDF export)</label>
+        <div class="file-drop" id="dropZone">
+          <p>Click to choose a file or drag and drop it here</p>
+          <p class="small-note">Use LinkedIn's "Save to PDF" from your profile. PDF only, up to 10MB</p>
+          <input type="file" id="fileInput" accept="application/pdf">
+          <p class="file-name" id="fileName"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Your email address</label>
+        <input type="email" id="emailInput" placeholder="you@example.com" required>
+      </div>
+      <button type="submit" class="btn btn-gold btn-block" id="submitBtn">Score My LinkedIn</button>
+      <p class="error-msg" id="errorMsg"></p>
+
+      <div class="result-box" id="resultBox">
+        <p class="badge-label">YOUR LINKEDIN SCORE</p>
+        <div class="score-number" id="scoreNumber">0/100</div>
+        <div class="score-bar-track"><div class="score-bar-fill" id="scoreBar"></div></div>
+        <p id="feedbackText"></p>
+        <p class="placeholder-note">This is a placeholder score. Real AI scoring will go live once an AI provider API key is connected on the backend.</p>
+        <a class="btn btn-gold btn-block mt-40" href="services.html">See Packages That Can Fix This &rarr;</a>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; 2026 EXTREME Resume Makeover. All rights reserved.</p>
+    <p><a href="index.html">Back Home</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+  initScorerForm({
+    formId: 'scorerForm',
+    fileInputId: 'fileInput',
+    dropZoneId: 'dropZone',
+    fileNameId: 'fileName',
+    emailId: 'emailInput',
+    resultBoxId: 'resultBox',
+    scoreNumberId: 'scoreNumber',
+    scoreBarId: 'scoreBar',
+    feedbackId: 'feedbackText',
+    submitBtnId: 'submitBtn',
+    errorId: 'errorMsg',
+    fileLabel: 'LinkedIn profile PDF',
+    endpoint: '/api/score-linkedin',
+    fallbackFeedback: 'Your LinkedIn profile has a good foundation, but your headline and About section could be more keyword-optimized for recruiter search, and your experience section would benefit from clearer, outcome-focused positioning.'
+  });
+</script>
+</body>
+</html>
