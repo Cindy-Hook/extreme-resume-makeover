@@ -141,3 +141,5 @@ footer a { color: var(--gold); }
   .hero-grid { grid-template-columns: 1fr; }
   h1 { font-size: 2.1rem; }
 }
+
+.card.c-orange { border-top-color: #e0562c; }
