@@ -5,6 +5,21 @@ if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 }
 
+// Dropdown menus (Services / LinkedIn-Only Packages)
+document.querySelectorAll('.nav-dropdown-toggle').forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const dropdown = btn.closest('.nav-dropdown');
+    const willOpen = !dropdown.classList.contains('open');
+    document.querySelectorAll('.nav-dropdown.open').forEach(function (d) { d.classList.remove('open'); });
+    if (willOpen) dropdown.classList.add('open');
+    btn.setAttribute('aria-expanded', String(willOpen));
+  });
+});
+document.addEventListener('click', function () {
+  document.querySelectorAll('.nav-dropdown.open').forEach(function (d) { d.classList.remove('open'); });
+});
+
 // Generic AI scorer form handler, used by resume-scorer.html and linkedin-scorer.html
 function initScorerForm(config) {
   const form = document.getElementById(config.formId);
