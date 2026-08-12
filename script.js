@@ -16,8 +16,8 @@ document.querySelectorAll('.nav-dropdown-toggle').forEach(function (btn) {
     btn.setAttribute('aria-expanded', String(willOpen));
   });
 });
-document.addEventListener('click', function () {
-  document.querySelectorAll('.nav-dropdown.open').forEach(function (d) { d.classList.remove('open'); });
+document.addEventListener('click', function (e) {
+  document.querySelectorAll('.nav-dropdown.open').forEach(function (d) { if (!d.contains(e.target)) d.classList.remove('open'); });
 });
 
 // Generic AI scorer form handler, used by resume-scorer.html and linkedin-scorer.html
