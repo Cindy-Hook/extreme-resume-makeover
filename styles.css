@@ -1,10 +1,10 @@
 :root {
   --bg: #0a0a14;
-  --gold: #f5a623;
-  --gold-dark: #d98c0a;
-  --pink: #e0447b;
-  --blue: #4a90d9;
-  --teal: #3fc1c9;
+  --gold: #a855f7;
+  --gold-dark: #7c3aed;
+  --pink: #6366f1;
+  --blue: #3b82f6;
+  --teal: #0a66c2;
   --text: #ffffff;
   --muted: #c7c7d1;
   --card-bg: rgba(255,255,255,0.04);
@@ -17,7 +17,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background-color: var(--bg);
-  background-image: radial-gradient(circle at 50% 0%, rgba(107,43,160,0.35), rgba(10,10,20,0) 55%);
+  background-image: radial-gradient(circle at 50% 0%, rgba(168,85,247,0.35), rgba(10,10,20,0) 55%);
   background-attachment: fixed;
   color: var(--text);
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
@@ -55,7 +55,7 @@ img { max-width: 100%; }
 
 .btn { display: inline-block; padding: 14px 28px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; cursor: pointer; border: 2px solid transparent; transition: transform 0.15s ease, opacity 0.15s ease; }
 .btn:hover { transform: translateY(-2px); }
-.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: #231400; }
+.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: #ffffff; }
 .btn-outline { border-color: var(--gold); color: var(--gold); background: transparent; }
 .btn-block { display: block; width: 100%; text-align: center; }
 .btn-sm { padding: 10px 20px; font-size: 0.85rem; }
@@ -128,7 +128,7 @@ ul.plain li { margin-bottom: 8px; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .error-msg { color: var(--pink); font-size: 0.88rem; margin-top: 10px; }
-.placeholder-note { background: rgba(245,166,35,0.12); border: 1px solid var(--gold); color: var(--gold); font-size: 0.82rem; padding: 10px 16px; border-radius: 10px; margin-top: 18px; }
+.placeholder-note { background: rgba(168,85,247,0.12); border: 1px solid var(--gold); color: var(--gold); font-size: 0.82rem; padding: 10px 16px; border-radius: 10px; margin-top: 18px; }
 
 footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 40px 0; text-align: center; color: var(--muted); font-size: 0.85rem; }
 footer a { color: var(--gold); }
@@ -142,4 +142,4 @@ footer a { color: var(--gold); }
   h1 { font-size: 2.1rem; }
 }
 
-.card.c-orange { border-top-color: #e0562c; }
+.card.c-orange { border-top-color: #c084fc; }
