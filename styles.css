@@ -39,7 +39,7 @@ img { max-width: 100%; }
   max-width: var(--max-width); margin: 0 auto; padding: 14px 24px;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
-.nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; }
+.nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; flex-shrink: 0; white-space: nowrap; }
 .nav-logo img { height: 36px; width: auto; }
 .nav-links { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
 .nav-links a { font-size: 0.85rem; color: var(--muted); padding: 6px 4px; white-space: nowrap; }
