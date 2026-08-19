@@ -117,8 +117,8 @@ h2 { font-size: 2.1rem; }
 .testimonial h3 { font-size: 1.6rem; margin-bottom: 18px; }
 .testimonial p { color: var(--muted); }
 
-.testimonial-wrap { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
-.testimonial-video { flex: 1 1 340px; max-width: 380px; }
+.testimonial-wrap { display: flex; align-items: stretch; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.testimonial-video { flex: 1 1 340px; max-width: 380px; display: flex; align-items: center; justify-content: center; }
 .video-frame { position: relative; width: 100%; padding-top: 56.25%; border-radius: 18px; overflow: hidden; }
 .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 .testimonial-wrap .testimonial { flex: 1 1 380px; margin: 0; }
