@@ -105,7 +105,7 @@ h2 { font-size: 2.1rem; }
 .card.c-teal { border-top-color: var(--teal); }
 .price-pill { display: inline-block; border: 1px solid var(--card-border); border-radius: 999px; padding: 5px 14px; font-weight: 700; margin-bottom: 16px; width: fit-content; }
 .card h3 { margin: 0 0 12px; font-size: 1.3rem; }
-.card p { color: var(--muted); margin: 0 0 20px; flex-grow: 1; }
+.card p { color: var(--muted); margin: 0 0 20px; }
 .badge-label { color: var(--gold); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; margin-bottom: 10px; }
 
 .feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin: 32px 0; }
