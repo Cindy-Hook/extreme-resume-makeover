@@ -164,3 +164,28 @@ footer a { color: var(--gold); }
 }
 
 .card.c-orange { border-top-color: #c084fc; }
+
+/* Packages page: 4 cards */
+.container-wide { max-width: 1320px; }
+.grid.grid-4 { grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.grid.grid-4 .card { padding: 24px; }
+.grid.grid-4 .card .btn { margin-top: auto; }
+.grid.grid-4 ul.plain { margin-bottom: 28px; }
+@media (max-width: 1180px) { .grid.grid-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .grid.grid-4 { grid-template-columns: 1fr; } }
+.card-more { display: block; text-align: center; margin-top: 14px; font-size: 0.9rem; color: var(--gold); }
+.card-more:hover { text-decoration: underline; }
+
+/* Headhunter in Your Corner page */
+.page-copy > * { max-width: 780px; }
+.page-copy h2 { margin: 56px 0 18px; font-size: 1.8rem; }
+.lead-line { font-size: 1.3rem; font-weight: 700; margin: 0 0 12px; }
+.phase { background: var(--card-bg); border: 1px solid var(--card-border); border-left: 4px solid var(--gold); border-radius: 14px; padding: 24px 28px; margin: 0 0 22px; }
+.phase h3 { margin: 0 0 4px; font-size: 1.25rem; }
+.phase .phase-when { display: block; color: var(--gold); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 14px; }
+.phase ul.plain { margin: 0; }
+.price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin: 24px 0; }
+@media (max-width: 700px) { .price-grid { grid-template-columns: 1fr; } }
+.price-grid .investment-box { margin: 0; max-width: none; }
+.price-grid .investment-box p { color: var(--muted); margin: 6px 0 0; }
+.page-copy .testimonial { margin: 40px 0 0; }
